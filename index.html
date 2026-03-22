@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ManagerMate - AI-powered coaching for confident managers. Coming soon.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://managermate.co.uk/">
+  <title>ManagerMate - Coming Soon</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #f4f1ec 0%, #eef4f0 50%, #f8f6f2 100%);
+      color: #1f2a25;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative background shapes */
+    .bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .bg-shape-1 {
+      top: -10%;
+      right: -5%;
+      width: 40%;
+      height: 40%;
+      background: radial-gradient(circle, rgba(154,163,106,0.15), transparent 70%);
+    }
+
+    .bg-shape-2 {
+      bottom: -15%;
+      left: -10%;
+      width: 50%;
+      height: 50%;
+      background: radial-gradient(circle, rgba(239,111,108,0.08), transparent 70%);
+    }
+
+    .bg-shape-3 {
+      top: 40%;
+      left: 60%;
+      width: 30%;
+      height: 30%;
+      background: radial-gradient(circle, rgba(156,175,155,0.12), transparent 70%);
+    }
+
+    .container {
+      text-align: center;
+      max-width: 500px;
+      z-index: 10;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #1f2a25;
+    }
+
+    .coming-soon {
+      display: inline-block;
+      background: linear-gradient(135deg, #6f7f4e, #9caf9b);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: #5b6a60;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: white;
+      color: #5b6a60;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .social-link:hover {
+      background: #6f7f4e;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(111,127,78,0.3);
+    }
+
+    .social-link svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contact {
+      margin-bottom: 2rem;
+    }
+
+    .contact a {
+      color: #6f7f4e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-links {
+      font-size: 0.875rem;
+      color: #9ca3af;
+    }
+
+    .legal-links a {
+      color: #6b7280;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .legal-links a:hover {
+      color: #6f7f4e;
+      text-decoration: underline;
+    }
+
+    .legal-links span {
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .tagline {
+        font-size: 1.1rem;
+      }
+
+      .logo {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorative shapes -->
+  <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-3" aria-hidden="true"></div>
+
+  <div class="container">
+    <img src="Logo.png" alt="ManagerMate Logo" class="logo">
+
+    <div class="coming-soon">Coming Soon</div>
+
+    <h1>ManagerMate</h1>
+
+    <p class="tagline">AI-powered coaching for confident managers</p>
+
+    <p class="description">
+      We're building something special to help managers navigate difficult conversations,
+      develop their teams, and lead with confidence. Stay tuned.
+    </p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/managermate" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/managermate" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+    </div>
+
+    <div class="contact">
+      <p>Questions? <a href="mailto:info@managermate.co.uk">info@managermate.co.uk</a></p>
+    </div>
+
+    <div class="legal-links">
+      <a href="https://managermate.co.uk/terms.html">Terms</a>
+      <span>|</span>
+      <a href="https://managermate.co.uk/privacy.html">Privacy</a>
+    </div>
+  </div>
+</body>
+</html>
