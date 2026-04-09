@@ -99,6 +99,14 @@
       margin-top: 0;
     }
 
+    .content-section h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
     .content-section p {
       color: var(--muted);
       margin-bottom: 1rem;
@@ -134,6 +142,37 @@
 
     .highlight-box p:last-child {
       margin-bottom: 0;
+    }
+
+    .definitions-box {
+      background: rgba(111, 127, 78, 0.08);
+      border: 1px solid rgba(111, 127, 78, 0.2);
+      padding: 1.5rem;
+      border-radius: var(--radius-sm);
+      margin: 1.5rem 0;
+    }
+
+    .definitions-box ul {
+      margin-bottom: 0;
+    }
+
+    .business-only {
+      background: rgba(111, 127, 78, 0.05);
+      border-left: 4px solid rgba(111, 127, 78, 0.5);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius-sm);
+      margin: 1rem 0;
+    }
+
+    .business-only::before {
+      content: "Business Customers Only";
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
     }
 
     .legal-footer {
@@ -181,150 +220,274 @@
 
     <div class="page-header">
       <h1>Terms & Conditions</h1>
-      <p class="last-updated">Last Updated: November 19, 2025</p>
+      <p class="last-updated">Last Updated: April 2026</p>
     </div>
 
     <div class="content-section">
       <div class="highlight-box">
-        <p><strong>Important:</strong> By accessing or using ManagerMate, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our services.</p>
+        <p><strong>Important Notice:</strong> These Terms & Conditions govern your access to and use of ManagerMate. Please read them carefully before using our Service. Different provisions apply depending on whether you are a Consumer or Business Customer, as explained below.</p>
       </div>
 
-      <h2>1. Acceptance of Terms</h2>
-      <p>Welcome to ManagerMate. These Terms & Conditions govern your access to and use of our platform, including our website, mobile applications, and related services (collectively, the "Service"). By creating an account or using any part of our Service, you agree to these terms.</p>
+      <h2>1. Definitions</h2>
+      <p>In these Terms, the following definitions apply:</p>
+      <div class="definitions-box">
+        <ul>
+          <li><strong>"ManagerMate," "we," "our," or "us"</strong> refers to ManagerMate Ltd, a company registered in England and Wales.</li>
+          <li><strong>"Service"</strong> means the ManagerMate platform, including our website, applications, AI coaching tools, training modules, and related services.</li>
+          <li><strong>"Consumer"</strong> means an individual acting for purposes wholly or mainly outside that individual's trade, business, craft, or profession.</li>
+          <li><strong>"Business Customer"</strong> means any user or entity accessing the Service for purposes relating to their trade, business, craft, or profession, including organisations subscribing to Business plans.</li>
+          <li><strong>"User," "you," or "your"</strong> refers to anyone accessing or using the Service, whether as a Consumer or Business Customer.</li>
+          <li><strong>"Paid Plan"</strong> means any subscription tier requiring payment, including Premium and Business plans.</li>
+        </ul>
+      </div>
 
-      <h2>2. Description of Service</h2>
-      <p>ManagerMate provides AI-powered management coaching and training tools designed to help managers develop their leadership skills, prepare for difficult conversations, and improve team performance. Our Service includes:</p>
+      <h2>2. About Us</h2>
+      <p><strong>ManagerMate Ltd</strong><br>
+      Company Number: [INSERT]<br>
+      Registered Office: [INSERT]<br>
+      Email: <a href="mailto:info@managermate.co.uk">info@managermate.co.uk</a></p>
+
+      <h2>3. Acceptance of Terms</h2>
+      <p><strong>3.1</strong> By creating an account or using any part of our Service, you agree to be bound by these Terms. If you do not agree, please do not use our Service.</p>
+      <p><strong>3.2</strong> If you are entering into these Terms on behalf of an organisation, you represent and warrant that you have authority to bind that organisation to these Terms.</p>
+      <p><strong>3.3</strong> These Terms were last updated on the date shown above. We recommend reviewing them periodically.</p>
+
+      <h2>4. Description of Service</h2>
+      <p>ManagerMate provides AI-powered management coaching and training tools designed to help managers develop their leadership skills, prepare for challenging conversations, and improve team performance. Our Service includes:</p>
       <ul>
-        <li>Interactive training modules on emotional intelligence, HR essentials, and leadership development</li>
+        <li>Interactive training modules covering emotional intelligence, HR essentials, and leadership development</li>
         <li>AI-powered conversation coaching through our virtual coach, Hilary</li>
-        <li>Personalized learning plans and recommendations</li>
+        <li>Personalised learning plans and recommendations</li>
         <li>Practice scenarios and simulation tools</li>
-        <li>Team performance insights and analytics</li>
+        <li>Team performance insights and analytics (Business plans)</li>
       </ul>
 
-      <h2>3. Eligibility</h2>
-      <p>You must be at least 18 years old to use ManagerMate. By using our Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into these Terms.</p>
+      <h2>5. Eligibility</h2>
+      <p><strong>5.1</strong> You must be at least 18 years old to use ManagerMate.</p>
+      <p><strong>5.2</strong> By using our Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into these Terms.</p>
 
-      <h2>4. Account Registration</h2>
-      <p>To access certain features of ManagerMate, you must create an account. You agree to:</p>
+      <h2>6. Account Registration</h2>
+      <p>To access certain features, you must create an account. You agree to:</p>
       <ul>
         <li>Provide accurate, current, and complete information during registration</li>
-        <li>Maintain and update your information to keep it accurate and current</li>
+        <li>Maintain and update your information to keep it accurate</li>
         <li>Maintain the security of your password and account credentials</li>
-        <li>Notify us immediately of any unauthorized use of your account</li>
+        <li>Notify us promptly of any unauthorised use of your account</li>
         <li>Accept responsibility for all activities that occur under your account</li>
       </ul>
 
-      <h2>5. Subscription Plans and Pricing</h2>
-      <p><strong>Free Plan:</strong> Free access to core training modules including Emotional Intelligence training, HR essentials, and leadership development training.</p>
+      <h2>7. Subscription Plans and Pricing</h2>
+      <h3>7.1 Plans Available</h3>
+      <p><strong>Free Plan:</strong> Access to core training modules including Emotional Intelligence training, HR essentials, and leadership development training.</p>
       <p><strong>Premium Plan:</strong> £5.99/month subscription includes all Free features plus advanced training content, bespoke learning plans, and access to Hilary, your personal conversation coach.</p>
-      <p><strong>Business Plan:</strong> Custom pricing for organizations requiring advanced analytics, reporting, and insights into skills gaps and common queries across their management teams.</p>
-      <p>All subscription fees are billed in advance on a monthly or annual basis, depending on your selected plan. Prices are subject to change with 30 days notice.</p>
+      <p><strong>Business Plan:</strong> Custom pricing for organisations requiring advanced analytics, reporting, and insights into skills gaps and common queries across management teams.</p>
+      <p><strong>7.2</strong> Prices are subject to change. We will provide at least 30 days' notice of any price changes, which will take effect at your next renewal date.</p>
 
-      <h2>6. Payment Terms</h2>
-      <ul>
-        <li>Payment is due immediately upon subscription purchase</li>
-        <li>We accept major credit cards and other payment methods as indicated on our platform</li>
-        <li>You authorize us to charge your payment method on a recurring basis according to your subscription plan</li>
-        <li>Failed payments may result in suspension or termination of your subscription</li>
-        <li>All fees are non-refundable except as required by law or as explicitly stated in these Terms</li>
-      </ul>
+      <h2>8. Payment Terms (Paid Plans Only)</h2>
+      <p>The following provisions apply only to users with Paid Plans:</p>
+      <p><strong>8.1</strong> Payment is due immediately upon subscription purchase.</p>
+      <p><strong>8.2</strong> We accept major credit cards and other payment methods as indicated on our platform.</p>
+      <p><strong>8.3</strong> You authorise us to charge your payment method on a recurring basis according to your subscription plan.</p>
+      <p><strong>8.4 Automatic Renewal:</strong> Subscriptions renew automatically at the end of each billing period (monthly or annual) unless you cancel before the renewal date. You will be charged the then-current subscription fee unless you cancel in accordance with Section 9.</p>
+      <p><strong>8.5</strong> If payment fails, we may suspend access to Paid Plan features until payment is successfully processed. We will notify you of any payment issues and provide reasonable opportunity to update your payment details.</p>
+      <p><strong>8.6</strong> All fees are non-refundable except as required by law or as explicitly stated in these Terms.</p>
 
-      <h2>7. Cancellation and Refunds</h2>
-      <p><strong>14-Day Cooling-Off Period:</strong> Under the Consumer Contracts Regulations 2013, you have the right to cancel your subscription within 14 days of purchase for a full refund. However, by starting to use the Service immediately, you acknowledge that you may lose this cancellation right once you begin accessing digital content.</p>
-      <p><strong>General Cancellation:</strong> You may cancel your subscription at any time through your account settings. Cancellations take effect at the end of your current billing period. You will continue to have access to Premium features until the end of your paid subscription period.</p>
-      <p>We do not provide refunds for partial months or unused portions of your subscription after the 14-day cooling-off period, except where required by applicable law or in cases of service failure on our part.</p>
+      <h2>9. Cancellation, Cooling-Off, and Refunds</h2>
+      <h3>9.1 Consumer Cooling-Off Rights</h3>
+      <p>If you are a Consumer, you have the right to cancel your subscription within 14 days of purchase for a full refund under the Consumer Contracts Regulations 2013.</p>
+      <p>However, if you expressly request that we begin providing the digital content or services immediately and acknowledge that you will lose your right to cancel once the content or services are fully provided, you may lose this cancellation right earlier. We will ask for your express consent and acknowledgement before providing immediate access.</p>
 
-      <h2>8. Acceptable Use</h2>
+      <h3>9.2 General Cancellation</h3>
+      <p>You may cancel your subscription at any time through your account settings. Cancellation takes effect at the end of your current billing period. You will retain access to Paid Plan features until then.</p>
+
+      <h3>9.3 Refunds</h3>
+      <p>We do not provide refunds for partial billing periods or unused portions of your subscription after the cooling-off period has ended, except where required by applicable law or in cases of material service failure on our part.</p>
+
+      <h2>10. Acceptable Use</h2>
       <p>You agree not to use ManagerMate to:</p>
       <ul>
         <li>Violate any applicable laws or regulations</li>
         <li>Infringe on the intellectual property rights of others</li>
         <li>Upload or transmit viruses, malware, or other harmful code</li>
-        <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
+        <li>Attempt to gain unauthorised access to our systems or other users' accounts</li>
         <li>Engage in any activity that disrupts or interferes with the Service</li>
-        <li>Use the Service for any illegal, harmful, or abusive purposes</li>
+        <li>Use the Service for any unlawful, harmful, or abusive purposes</li>
         <li>Scrape, copy, or reproduce content from our platform without permission</li>
         <li>Reverse engineer or attempt to extract source code from our Service</li>
+        <li>Resell, redistribute, or sublicense access to the Service without our prior written consent</li>
       </ul>
 
-      <h2>9. Intellectual Property Rights</h2>
-      <p>All content, features, and functionality of ManagerMate, including but not limited to text, graphics, logos, software, AI models, and training materials, are owned by ManagerMate or its licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
-      <p>You are granted a limited, non-exclusive, non-transferable license to access and use the Service for your personal or internal business purposes. This license does not include the right to:</p>
+      <h2>11. Intellectual Property Rights</h2>
+      <p><strong>11.1</strong> All content, features, and functionality of ManagerMate, including text, graphics, logos, software, AI models, and training materials, are owned by ManagerMate Ltd or its licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+      <p><strong>11.2</strong> You are granted a limited, non-exclusive, non-transferable, revocable licence to access and use the Service for your personal or internal business purposes in accordance with these Terms. This licence does not include the right to:</p>
       <ul>
         <li>Reproduce, distribute, or create derivative works from our content</li>
-        <li>Use our content for commercial purposes outside of your subscription</li>
+        <li>Use our content for commercial purposes outside the scope of your subscription</li>
         <li>Remove or modify any copyright or proprietary notices</li>
       </ul>
 
-      <h2>10. User-Generated Content</h2>
-      <p>When you use our Service, you may provide information, questions, or other content to our AI coach and platform. By doing so, you grant us a worldwide, non-exclusive, royalty-free license to use, store, and process this content for the purposes of:</p>
+      <h2>12. User-Generated Content</h2>
+      <p><strong>12.1</strong> When you use our Service, you may provide information, questions, or other content to our AI coach and platform.</p>
+      <p><strong>12.2</strong> By doing so, you grant us a worldwide, non-exclusive, royalty-free licence to use, store, and process this content for the purposes of:</p>
       <ul>
         <li>Providing and improving our Service</li>
-        <li>Generating personalized recommendations and insights</li>
-        <li>Developing and training our AI models</li>
-        <li>Creating aggregated, anonymized analytics</li>
+        <li>Generating personalised recommendations and insights</li>
+        <li>Developing and improving our AI models using de-identified and aggregated data</li>
+        <li>Creating aggregated analytics</li>
       </ul>
-      <p>We will not share your personal content with third parties except as described in our Privacy Policy.</p>
+      <p><strong>12.3</strong> We will handle your personal data in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
 
-      <h2>11. AI-Generated Content Disclaimer</h2>
-      <p>ManagerMate uses artificial intelligence to provide coaching and guidance. While we strive for accuracy and usefulness, you acknowledge that:</p>
+      <h2>13. AI-Generated Content Disclaimer</h2>
+      <p>ManagerMate uses artificial intelligence to provide coaching and guidance. While we work to ensure our AI provides helpful and relevant advice, please note that:</p>
       <ul>
-        <li>AI-generated advice is not a substitute for professional coaching, legal advice, or HR consultation</li>
-        <li>The Service provides general guidance and may not be suitable for all situations</li>
-        <li>You are responsible for evaluating and applying any advice or recommendations</li>
+        <li>AI-generated advice is intended as general guidance only and is not a substitute for professional coaching, legal advice, HR consultation, or other professional services</li>
+        <li>The Service provides general guidance that may not be appropriate for every situation or jurisdiction</li>
+        <li>You are responsible for evaluating and deciding whether to apply any advice or recommendations</li>
         <li>We do not guarantee specific outcomes from using our Service</li>
-        <li>AI-generated content may occasionally contain errors or inaccuracies</li>
+        <li>AI-generated content may occasionally contain errors, inaccuracies, or responses that are not suitable for your particular circumstances</li>
+        <li>You should exercise your own professional judgement when applying any guidance to real workplace situations</li>
       </ul>
 
-      <h2>12. Limitation of Liability</h2>
-      <p>To the fullest extent permitted by law, ManagerMate and its founders, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, arising from:</p>
+      <h2>14. Service Availability and Modifications</h2>
+      <p><strong>14.1</strong> We aim to provide a reliable Service but cannot guarantee uninterrupted access. The Service may be temporarily unavailable due to:</p>
+      <ul>
+        <li>Scheduled maintenance (we will endeavour to provide advance notice where practicable)</li>
+        <li>Urgent updates or security patches</li>
+        <li>Technical issues beyond our reasonable control</li>
+        <li>Third-party service disruptions</li>
+      </ul>
+      <p><strong>14.2</strong> We reserve the right to modify, update, or discontinue features of the Service at any time. Where changes materially affect your use of the Service, we will provide reasonable notice.</p>
+      <p><strong>14.3</strong> We will not be liable for any unavailability or modifications made in accordance with this section, except to the extent required by law.</p>
+
+      <h2>15. Limitation of Liability</h2>
+      <h3>15.1 General Limitations</h3>
+      <p>To the fullest extent permitted by law, ManagerMate Ltd, its directors, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, business opportunities, or goodwill, arising from:</p>
       <ul>
         <li>Your use or inability to use the Service</li>
         <li>Any actions taken based on advice or content provided by the Service</li>
-        <li>Unauthorized access to or alteration of your content</li>
+        <li>Unauthorised access to or alteration of your content</li>
         <li>Errors, interruptions, or disruptions in the Service</li>
+        <li>Any third-party conduct or content</li>
       </ul>
-      <p>Our total liability for any claims arising from your use of the Service shall not exceed the amount you paid us in the 12 months preceding the claim.</p>
-      <p>Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by law.</p>
 
-      <h2>13. Disclaimer of Warranties</h2>
-      <p>The Service is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that:</p>
+      <h3>15.2 Liability Cap</h3>
+      <p>Our total liability for any claims arising from your use of the Service shall not exceed the greater of (a) the amount you paid us in the 12 months preceding the claim, or (b) £100.</p>
+
+      <div class="business-only">
+        <h3>15.3 Additional Limitations for Business Customers</h3>
+        <p>If you are a Business Customer, you acknowledge that:</p>
+        <ul>
+          <li>The limitations of liability in this section are reasonable given the nature and pricing of the Service</li>
+          <li>You have had the opportunity to review these Terms and seek legal advice</li>
+          <li>These limitations shall apply even if any remedy fails of its essential purpose</li>
+        </ul>
+      </div>
+
+      <h3>15.4 Preserved Rights</h3>
+      <p>Nothing in these Terms excludes or limits our liability for:</p>
+      <ul>
+        <li>Death or personal injury caused by our negligence</li>
+        <li>Fraud or fraudulent misrepresentation</li>
+        <li>Any breach of the obligations implied by section 12 of the Sale of Goods Act 1979 or section 2 of the Supply of Goods and Services Act 1982</li>
+        <li>Defective products under the Consumer Protection Act 1987</li>
+        <li>Any other liability that cannot be excluded or limited by applicable law</li>
+      </ul>
+
+      <h3>15.5 Consumer Statutory Rights</h3>
+      <p>If you are a Consumer, nothing in these Terms affects your statutory rights under the Consumer Rights Act 2015. You have legal rights in relation to digital content that is faulty or not as described. Advice about your statutory rights is available from your local Citizens Advice Bureau or Trading Standards office.</p>
+
+      <h2>16. Disclaimer of Warranties</h2>
+      <p><strong>16.1</strong> The Service is provided "as is" and "as available." To the extent permitted by law, we disclaim all warranties, whether express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p><strong>16.2</strong> We do not warrant that:</p>
       <ul>
         <li>The Service will be uninterrupted, secure, or error-free</li>
         <li>The results obtained from using the Service will be accurate or reliable</li>
-        <li>Any defects in the Service will be corrected</li>
+        <li>Any defects in the Service will be corrected within any particular timeframe</li>
       </ul>
-      <p><strong>Your Statutory Rights:</strong> Nothing in these Terms affects your statutory rights under the Consumer Rights Act 2015. As a consumer, you have legal rights in relation to digital content that is faulty or not as described. Advice about your statutory rights is available from your local Citizens Advice Bureau or Trading Standards office.</p>
+      <p><strong>16.3</strong> If you are a Consumer, this section does not affect your statutory rights.</p>
 
-      <h2>14. Indemnification</h2>
-      <p>You agree to indemnify, defend, and hold harmless ManagerMate and its founders, employees, and affiliates from any claims, liabilities, damages, losses, and expenses (including legal fees) arising from:</p>
+      <h2>17. Indemnification (Business Customers Only)</h2>
+      <div class="business-only">
+        <p><strong>17.1</strong> This section applies only to Business Customers and not to Consumers.</p>
+        <p><strong>17.2</strong> If you are a Business Customer, you agree to indemnify, defend, and hold harmless ManagerMate Ltd, its directors, employees, and affiliates from any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from:</p>
+        <ul>
+          <li>Your use of the Service in breach of these Terms</li>
+          <li>Your violation of any applicable laws or regulations</li>
+          <li>Your violation of any rights of a third party</li>
+          <li>Any content you submit or share through the Service that infringes third-party rights or violates applicable law</li>
+        </ul>
+        <p><strong>17.3</strong> We will notify you promptly of any such claim and provide reasonable cooperation in the defence of the claim at your expense.</p>
+      </div>
+
+      <h2>18. Suspension and Termination</h2>
+      <h3>18.1 Termination by You</h3>
+      <p>You may close your account at any time by contacting us or using the account settings feature.</p>
+
+      <h3>18.2 Suspension or Termination by Us</h3>
+      <p>We may suspend or terminate your account and access to the Service where reasonably necessary, including where:</p>
       <ul>
-        <li>Your use of the Service</li>
-        <li>Your violation of these Terms</li>
-        <li>Your violation of any rights of another party</li>
-        <li>Any content you submit or share through the Service</li>
+        <li>You breach these Terms or any applicable law</li>
+        <li>You engage in conduct that is harmful, abusive, or poses security risks to us, other users, or third parties</li>
+        <li>You fail to pay applicable subscription fees after reasonable notice</li>
+        <li>We are required to do so by law or regulatory authority</li>
+        <li>Your account shows signs of fraud or unauthorised use</li>
       </ul>
 
-      <h2>15. Termination</h2>
-      <p>We reserve the right to suspend or terminate your account and access to the Service at our discretion, with or without notice, if we believe you have violated these Terms or engaged in conduct harmful to ManagerMate or other users.</p>
+      <h3>18.3 Notice</h3>
+      <p>Where we suspend or terminate your account, we will provide notice and, where appropriate, an opportunity to remedy the issue, unless:</p>
+      <ul>
+        <li>Doing so would compromise the security of the Service or other users</li>
+        <li>We are prohibited from doing so by law</li>
+        <li>Immediate action is necessary to prevent harm or abuse</li>
+      </ul>
+
+      <h3>18.4 Effect of Termination</h3>
       <p>Upon termination:</p>
       <ul>
-        <li>Your right to use the Service will cease immediately</li>
-        <li>We may delete your account and content</li>
-        <li>You remain liable for any outstanding fees or obligations</li>
+        <li>Your right to use the Service will cease</li>
+        <li>We may delete your account and associated data in accordance with our Privacy Policy</li>
+        <li>You remain liable for any outstanding fees or obligations incurred before termination</li>
+        <li>Provisions of these Terms that by their nature should survive termination will continue to apply</li>
       </ul>
 
-      <h2>16. Changes to Terms</h2>
-      <p>We may update these Terms from time to time. When we make material changes, we will notify you by email or through a prominent notice on our platform. Your continued use of the Service after such changes constitutes acceptance of the updated Terms.</p>
+      <h2>19. Changes to Terms</h2>
+      <p><strong>19.1</strong> We may update these Terms from time to time. When we make material changes, we will:</p>
+      <ul>
+        <li>Update the "Last Updated" date at the top of these Terms</li>
+        <li>Notify you by email or through a prominent notice on our platform</li>
+        <li>Give you reasonable opportunity to review the changes before they take effect</li>
+      </ul>
+      <p><strong>19.2</strong> If you do not agree to the updated Terms, you should stop using the Service before the changes take effect. Your continued use of the Service after changes become effective constitutes acceptance of the updated Terms.</p>
+      <p><strong>19.3</strong> If you are a Consumer, material changes will not apply to you until you have had reasonable opportunity to review them.</p>
 
-      <h2>17. Governing Law and Disputes</h2>
-      <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales. Any disputes arising from these Terms or your use of the Service shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+      <h2>20. Governing Law and Disputes</h2>
+      <h3>20.1 Governing Law</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of England and Wales.</p>
 
-      <h2>18. Contact Information</h2>
-      <p>If you have questions about these Terms & Conditions, please contact us at:</p>
-      <p><strong>Email:</strong> info@managermate.co.uk</p>
-      <p><strong>Address:</strong> ManagerMate, Cardiff, Wales, United Kingdom</p>
+      <h3>20.2 Jurisdiction for Business Customers</h3>
+      <p>If you are a Business Customer, you agree that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute arising out of or in connection with these Terms.</p>
+
+      <h3>20.3 Jurisdiction for Consumers</h3>
+      <p>If you are a Consumer:</p>
+      <ul>
+        <li>You may bring claims in the courts of England and Wales, or in the courts of your country of residence within the United Kingdom if different</li>
+        <li>Nothing in these Terms affects your right to bring proceedings in any court that has jurisdiction under applicable law</li>
+        <li>We may bring claims against you in the courts of your country of residence within the United Kingdom</li>
+      </ul>
+
+      <h2>21. General Provisions</h2>
+      <p><strong>21.1 Entire Agreement:</strong> These Terms, together with our Privacy Policy and any additional terms you agree to when using specific features, constitute the entire agreement between you and ManagerMate regarding the Service.</p>
+      <p><strong>21.2 Severability:</strong> If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</p>
+      <p><strong>21.3 Waiver:</strong> Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+      <p><strong>21.4 Assignment:</strong> You may not assign or transfer your rights under these Terms without our prior written consent. We may assign our rights and obligations under these Terms without restriction.</p>
+      <p><strong>21.5 Third-Party Rights:</strong> These Terms do not confer any rights on any third party under the Contracts (Rights of Third Parties) Act 1999.</p>
+
+      <h2>22. Contact Us</h2>
+      <p>If you have questions about these Terms & Conditions, please contact us:</p>
+      <p><strong>ManagerMate Ltd</strong><br>
+      Company Number: [INSERT]<br>
+      Registered Office: [INSERT]<br>
+      Email: <a href="mailto:info@managermate.co.uk">info@managermate.co.uk</a></p>
 
       <div class="highlight-box" style="margin-top: 2rem;">
         <p><strong>Thank you for choosing ManagerMate.</strong> We're committed to helping you become the confident, capable leader your team deserves.</p>
@@ -337,7 +500,7 @@
     <div class="footer-content">
       <div class="footer-logo">
         <div class="footer-logo-icon" role="img" aria-label="ManagerMate logo"></div>
-              </div>
+      </div>
 
       <p class="footer-text">&copy; 2026 ManagerMate. All rights reserved.</p>
       <p class="footer-tagline">Manage people with calm confidence</p>
