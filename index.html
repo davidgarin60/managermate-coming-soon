@@ -123,7 +123,7 @@
 
     .features-preview {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.25rem;
       width: 100%;
       margin-bottom: 2.5rem;
@@ -193,7 +193,7 @@
 
     .outcomes-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
     }
 
@@ -228,6 +228,34 @@
 
     .manager-section .section-label {
       color: #5b6a60;
+    }
+
+    .topics-section {
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(111, 127, 78, 0.15);
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+
+    .topic-tag {
+      background: rgba(111, 127, 78, 0.1);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #3d4a41;
+      text-align: center;
+      transition: background 0.2s ease;
+    }
+
+    .topic-tag:hover {
+      background: rgba(111, 127, 78, 0.18);
     }
 
     .contact-section {
@@ -270,6 +298,14 @@
       color: #9ca3af;
     }
 
+    @media (max-width: 900px) {
+      .outcomes-grid,
+      .features-preview,
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 640px) {
       .logo {
         width: 220px;
@@ -279,12 +315,10 @@
         font-size: 1.25rem;
       }
 
-      .features-preview {
+      .outcomes-grid,
+      .features-preview,
+      .topics-grid {
         grid-template-columns: 1fr;
-      }
-
-      .value-prop {
-        padding: 1.25rem;
       }
 
       .contact-section {
@@ -373,6 +407,20 @@
           <h3>Microlearning that sticks</h3>
           <p>Quick lessons they can apply in minutes, not hours.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="topics-section">
+      <p class="section-label">Training topics covered</p>
+      <div class="topics-grid">
+        <div class="topic-tag">Performance conversations</div>
+        <div class="topic-tag">Disciplinary processes</div>
+        <div class="topic-tag">Absence management</div>
+        <div class="topic-tag">Return-to-work meetings</div>
+        <div class="topic-tag">Employee wellbeing</div>
+        <div class="topic-tag">Grievance handling</div>
+        <div class="topic-tag">Probation reviews</div>
+        <div class="topic-tag">UK employment law</div>
       </div>
     </div>
 
