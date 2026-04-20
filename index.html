@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="We're building ManagerMate to give managers the practical, nuanced support they need for the real scenarios they face every day. Coming soon.">
+  <meta name="description" content="ManagerMate helps HR and L&D teams build confident managers at scale. On-demand coaching, microlearning, and analytics to reduce escalations and close capability gaps. Coming soon.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://managermate.co.uk/">
-  <title>ManagerMate - Coming Soon</title>
+  <title>ManagerMate - Build Confident Managers at Scale | Coming Soon</title>
   <link rel="icon" type="image/png" sizes="300x300" href="icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
 
   <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="ManagerMate - Coming Soon">
-  <meta property="og:description" content="Practical, nuanced support for managers who don't have all the answers, and shouldn't have to pretend they do.">
+  <meta property="og:title" content="ManagerMate - Build Confident Managers at Scale">
+  <meta property="og:description" content="On-demand coaching and microlearning that reduces HR escalations and closes capability gaps. Support every manager without adding to your workload.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://managermate.co.uk/">
   <meta property="og:image" content="https://managermate.co.uk/icon.png">
@@ -20,8 +20,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ManagerMate - Coming Soon">
-  <meta name="twitter:description" content="Practical, nuanced support for managers who don't have all the answers, and shouldn't have to pretend they do.">
+  <meta name="twitter:title" content="ManagerMate - Build Confident Managers at Scale">
+  <meta name="twitter:description" content="On-demand coaching and microlearning that reduces HR escalations and closes capability gaps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
       color: #1f2a25;
       padding: 2rem;
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* Decorative background shapes */
@@ -83,22 +83,30 @@
       align-items: center;
       text-align: center;
       z-index: 10;
+      max-width: 800px;
     }
 
     .logo {
       width: 280px;
       height: auto;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
-    .tagline {
+    .headline {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #6f7f4e;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subheadline {
       font-size: 1.1rem;
       color: #5b6a60;
       font-weight: 400;
-      margin-bottom: 2.5rem;
-      letter-spacing: -0.01em;
-      max-width: 540px;
-      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 500px;
+      line-height: 1.6;
     }
 
     .coming-soon {
@@ -113,52 +121,148 @@
       margin-bottom: 2.5rem;
     }
 
-    .social-links {
-      display: flex;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
+    .features-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      width: 100%;
+      margin-bottom: 2.5rem;
     }
 
-    .social-link {
+    .feature-card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      text-align: left;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(111,127,78,0.15);
+    }
+
+    .feature-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: white;
-      color: #5b6a60;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 0.75rem;
     }
 
-    .social-link:hover {
-      background: #6f7f4e;
+    .feature-icon.blue { background: linear-gradient(135deg, #4a90a4, #6bb3c9); }
+    .feature-icon.purple { background: linear-gradient(135deg, #8b7bb8, #a899d4); }
+    .feature-icon.teal { background: linear-gradient(135deg, #4a9b8f, #6bc4b6); }
+    .feature-icon.orange { background: linear-gradient(135deg, #d4915a, #e8b07a); }
+
+    .feature-icon svg {
+      width: 20px;
+      height: 20px;
       color: white;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(111,127,78,0.3);
     }
 
-    .social-link svg {
-      width: 18px;
-      height: 18px;
+    .feature-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1f2a25;
+      margin-bottom: 0.35rem;
     }
 
-    .contact {
-      font-size: 0.9rem;
+    .feature-card p {
+      font-size: 0.85rem;
       color: #5b6a60;
+      line-height: 1.5;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #6f7f4e;
+      margin-bottom: 0.75rem;
+    }
+
+    .outcomes-section {
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .outcome-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 3px solid #6f7f4e;
+    }
+
+    .outcome-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1f2a25;
+      margin-bottom: 0.35rem;
+    }
+
+    .outcome-card p {
+      font-size: 0.85rem;
+      color: #5b6a60;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .manager-section {
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(111, 127, 78, 0.15);
+    }
+
+    .manager-section .section-label {
+      color: #5b6a60;
+    }
+
+    .contact-section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
       margin-bottom: 1.5rem;
     }
 
-    .contact a {
-      color: #6f7f4e;
-      text-decoration: none;
+    .contact-section h4 {
+      font-size: 0.9rem;
       font-weight: 500;
+      color: #5b6a60;
+      margin-bottom: 0.5rem;
     }
 
-    .contact a:hover {
-      text-decoration: underline;
+    .contact-section a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #6f7f4e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.2s ease;
+    }
+
+    .contact-section a:hover {
+      color: #5a6a40;
+    }
+
+    .contact-section a svg {
+      width: 20px;
+      height: 20px;
     }
 
     .copyright {
@@ -169,6 +273,22 @@
     @media (max-width: 640px) {
       .logo {
         width: 220px;
+      }
+
+      .headline {
+        font-size: 1.25rem;
+      }
+
+      .features-preview {
+        grid-template-columns: 1fr;
+      }
+
+      .value-prop {
+        padding: 1.25rem;
+      }
+
+      .contact-section {
+        padding: 1.25rem;
       }
     }
   </style>
@@ -182,28 +302,90 @@
   <div class="container">
     <img src="Logo.png" alt="ManagerMate" class="logo">
 
-    <p class="tagline">Most managers want to support their teams, but few get the guidance they need for the real scenarios they face every day. We're building ManagerMate to change that — practical, nuanced support for managers who don't have all the answers, and shouldn't have to pretend they do.</p>
+    <h1 class="headline">Support every manager, without adding HR workload</h1>
+    <p class="subheadline">On-demand coaching and microlearning that builds confident managers, with the analytics you need to close capability gaps.</p>
 
     <div class="coming-soon">Coming Soon</div>
 
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/managermate" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-          <rect x="2" y="9" width="4" height="12"></rect>
-          <circle cx="4" cy="4" r="2"></circle>
-        </svg>
-      </a>
-      <a href="https://www.instagram.com/managermate" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-      </a>
+    <div class="outcomes-section">
+      <p class="section-label">Why HR &amp; L&amp;D teams choose ManagerMate</p>
+      <div class="outcomes-grid">
+        <div class="outcome-card">
+          <h3>Reduced HR escalations</h3>
+          <p>Managers resolve people issues earlier, before they reach your desk.</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Capability gap insights</h3>
+          <p>See what your managers are struggling with, without extra surveys or admin.</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Consistent standards</h3>
+          <p>Every manager gets the same proven frameworks and guidance.</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Faster time-to-competence</h3>
+          <p>New managers build confidence in weeks, not months.</p>
+        </div>
+      </div>
     </div>
 
-    <p class="contact"><a href="mailto:info@managermate.co.uk">info@managermate.co.uk</a></p>
+    <div class="manager-section">
+      <p class="section-label">What your managers get</p>
+      <div class="features-preview">
+        <div class="feature-card">
+          <div class="feature-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3>Difficult conversation prep</h3>
+          <p>Walk into feedback, performance, or conflict chats with clarity.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Real-time coaching</h3>
+          <p>Instant, situational guidance when they need it most.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon teal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <h3>Practice scenarios</h3>
+          <p>Rehearse tricky moments before the real conversation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Microlearning that sticks</h3>
+          <p>Quick lessons they can apply in minutes, not hours.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h4>Interested in ManagerMate for your organisation?</h4>
+      <a href="mailto:info@managermate.co.uk">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        info@managermate.co.uk
+      </a>
+    </div>
 
     <p class="copyright">&copy; 2026 ManagerMate</p>
   </div>
